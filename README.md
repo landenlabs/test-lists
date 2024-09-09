@@ -66,7 +66,7 @@ by supporting logic and memory patterns.
 
 This very limited test reveals a few interesting facts. 
 1. Adding to the front of an ArrayList is expensive because the list data has to be shifted in memory while link list just adds a new node. 
-2. ArrayList can be optimized to avoid reallocation of memory by setting its capacity prior to adding data.  This aspect is not part of this bench test. 
+2. ArrayList can be optimized to avoid some reallocation of memory by setting its **capacity** prior to adding data.  This aspect is not part of this bench test. 
 3. LinkedLists have a fixed cost to add a new node or remove a node. This is not clearly revealed in the bench test because of overhead in the tests. 
 4. LinkedList random access is fast near the front or back with the middle being the most expensive requiring the longest traversal of the nodes.
 

@@ -3,10 +3,10 @@
 DT: 8-Sept-2024
 BY: Dennis Lang
   
-Measure link operations per millisecond to compare how ArrayList and LinkedList
+Measure list operations per millisecond to compare how **ArrayList** and **LinkedList**
 perform specific container operations.
 
-Operations tested - 
+Operations tested
 * Insert item to front of list
 * Append item to end of list
 * Get accessor
@@ -16,7 +16,7 @@ Operations tested -
 * Delete last item
 * Sort list
 
-This unit test is based off work and aritle by Renan Schmitt.
+This unit test is based off an article and code by Renan Schmitt.
 
 * Article - 
 https://medium.com/java-performance/performance-arraylist-vs-linked-list-966bde4cfe75
@@ -24,13 +24,13 @@ https://medium.com/java-performance/performance-arraylist-vs-linked-list-966bde4
 https://github.com/renan-schmitt/list-compare-performance
 
 
-### NOTES on App
+### Notes on application
 
 * Program is written in **Java**.
 * Build and run using Intellij
 
 
-### Screen output (run on Mac M3) 
+### Console output (run on Mac M3) 
 
 ```  
 [Start] Mac OS X aarch64
@@ -61,7 +61,7 @@ TestDelLAST
 
 ### Summary 
 Bench testing is not always an accurate representation of real world usage. 
-Compiler optimization can alert results and bench tests can often by biased 
+Compiler optimization can alert results and bench tests can often be biased 
 by supporting logic and memory patterns. 
 
 This very limited test reveals a few interesting facts. 
@@ -69,7 +69,6 @@ This very limited test reveals a few interesting facts.
 2. ArrayList can be optimized to avoid reallocation of memory by setting its capacity prior to adding data.  This aspect is not part of this bench test. 
 3. LinkedLists have a fixed cost to add a new node or remove a node. This is not clearly revealed in the bench test because of overhead in the tests. 
 4. LinkedList random access is fast near the front or back with the middle being the most expensive requiring the longest traversal of the nodes.
-5. 
 
 
 ### License  
@@ -87,8 +86,7 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  
 See the License for the specific language governing permissions and  
 limitations under the License.  
-```   
-  
-[To Top](#table)  
+```
+
 
 

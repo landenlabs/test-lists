@@ -5,9 +5,9 @@ import java.util.function.Supplier;
 
 /**
  * Unit test ArrayList and LinkedList container add/get performance.
- *
+ *<pr>
  * To enable asserts, add VM options -ea to run configuration.
- *
+ *<pre>
  * [Start] Mac OS X aarch64
  * TestAddFIRST             1,000         10,000        100,000  ; # Elements
  *       ArrayList         25,179          2,724            246  ; Ops/Milli
@@ -34,6 +34,7 @@ import java.util.function.Supplier;
  *       ArrayList      1,065,024      1,488,261      1,569,730  ; Ops/Milli
  *      LinkedList        250,931        214,955        263,236  ; Ops/Milli
  * [Done]
+ * </pre>
  */
 public class Main {
 
